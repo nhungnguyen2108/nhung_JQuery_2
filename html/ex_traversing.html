@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$("input").on('click', function(){
+				// $('#cont').parent().prev().css('color','red')
+				// $('#cont').children().filter('.choose').css('color','green');
+				$('#cont').children().not('.choose').css('color','yellow');
+			})
+		})
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="Click">
+	<div >
+		<span>Thẻ Span</span>
+		<p>Thẻ P</p>
+		<ul id="cont">
+			<li >Thẻ l1</li>
+			<li>Thẻ l2</li>
+			<li class="choose">Thẻ l3</li>
+			<li>Thẻ l4</li>
+			<li>Thẻ l5</li>
+		</ul>
+		
+	</div>
+</body>
+</html>

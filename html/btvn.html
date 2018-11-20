@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BTVN</title>
+	<link rel="stylesheet" href="../css/btvn.css">
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/btvn.js"></script>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li class="title" style="padding-right: 300px; font-size: 36px;">JQuery Steps</li>
+			<li class="title">Getting Started</li>
+			<li class="title">Examples</li>
+			<li class="title">Documentation</li>
+			<li class="title">Bootgid</li>
+			<li class="title">Blog</li>
+			<li class="title">GitHub</li>
+			<li class="title">About</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="left">
+			<div class="example"> Basic Example</div>
+			<div class="example"> Basic Form Example</div>
+			<div class="example"> Advanced Form Example</div>
+			<div class="example"> Dynamic Manipuiation Example</div>
+			<div class="example"> Tabs Example</div>
+			<div class="example"> Vertical Steps Example</div>
+			<div class="example"> Asyc Connect Loading Example</div>
+			<div class="example"> Embedded Connect Example</div>
+		</div>
+		<div id="about">
+			<div id="input">
+				<input type="button" name="" value="Account" id="account" class="bt bt-e">
+				<input type="button" name="" value="Profile" id="profile" class="bt">
+				<input type="button" name="" value="Waming" id="waming" class="bt">
+				<input type="button" name="" value="Finish" id="finish" class="bt">
+			</div>
+			<div class="choose ib1">
+				<b style="font-size: 20px; font-style: italic; display: block !important;">Account Imformations</b>
+				<hr width="100%">
+				<form >
+					<div>
+						<label>User name *</label><br>
+						<input type="text" name="name" id="name">
+						<span class="error" id="errorName"> </span>
+					</div>
+					<div>
+						<label>Password *</label><br>
+						<input type="password" name="password1" id="password1">
+						<span class="error" id="errorPassword1"> </span>
+					</div>
+					<div>
+						<label> Config Password *</label><br>
+						<input type="password" name="password" id="rePassword1">
+						<span class="error" id="errorRePassword1" > </span>
+					</div>
+					<div>
+						(*) Mandatory
+					</div>
+				</form>
+				<div class="lb">
+					<button >Previous</button>
+					<button class="next" id="n1">next</button>
+				</div>
+			</div>
+			<div class="choose ib2">
+				<b style="font-size: 20px; font-style: italic;">Profile Imformations</b>
+				<hr width="100%">
+				<form >
+					<div>
+						<label>First name *</label><br>
+						<input type="text" name="first" id="first" value="">
+						<span class="error" id="errorfirst"> </span>
+					</div>
+					<div>
+						<label>Last name *</label><br>
+						<input type="text" name="last" id="last">
+						<span class="error" id="errorlast"> </span>
+					</div>
+					<div>
+						<label>Email*</label><br>
+						<input type="email" name="email" id="email">
+						<span class="error" id="errorEmail"> </span>
+					</div>
+					<div>
+						<label>Address</label><br>
+						<input type="text" name="address" id="address">
+						<span class="error" id="erroradd"> </span>
+					</div>
+					<div>
+						<label>Ages</label><br>
+						<input type="number" name="age" id="age">
+						<span class="error" id="errorAge"> </span>
+					</div>
+					<div>
+						(*) Mandatory
+					</div>
+				</form>
+				<div class="lb">
+					<button class="previous">Previous</button>
+					<button class="next" id="n2">next</button>
+				</div>
+			</div>
+			<div class="choose ib3">
+				<b style="font-size: 20px; font-style: italic;">Hints Imformations</b>
+				<form style="height: 300px;">
+					<ul>
+						<li>Foo</li>
+						<li>Bar</li>
+						<li>FooBar</li>
+					</ul>
+				</form>
+				<div class="lb">
+					<button class="previous">Previous</button>
+					<button class="next" id="n3">next</button>
+				</div>
+			</div>
+			<div class="choose ib4">
+				<b style="font-size: 20px; font-style: italic;">Finish Imformations</b>
+				<form style="height: 300px;">
+					<span class="error" id="errorcheck"> </span>
+					<input type="checkbox" id="check"> I agree with the Terms and Conditions.
+				</form>
+				<div class="lb">
+					<button class="previous">Previous</button>
+					<button class="next finish">Finish</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

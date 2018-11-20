@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex01</title>
+	<style>
+		#cont{
+			width: 50%;
+			height: 200px;
+			background-color: black;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$('#cont').on("mouseenter" , function(){
+				$('#cont').css('background-color', 'red');
+			});
+
+
+			$('#cont').on("mouseleave" , function(){
+				$(this).css('background-color', 'yellow');
+			});
+			$('#hide').on('click', function(){
+				$('#cont').hide(1000)
+			})
+			$('#show').on('click', function(){
+				$('#cont').show(1000)
+			})
+			$('#toggle').on('click', function(){
+				$('#cont').toggle(1000)
+			})
+
+
+		})
+
+	</script>
+</head>
+<body>
+	<div id="cont">	
+	</div>
+	<input id="show" type="button" name="" value="Show">
+	<input id="hide" type="button" name="" value="hide">
+	<input id="toggle" type="button" name="" value="toggle">
+	
+</body>
+</html>
